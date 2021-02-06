@@ -12,3 +12,12 @@ for (let anchor of anchors) {
     })
   })
 }
+
+
+$(document).ready(function () {
+  $('.button__item').click(function(event) {
+    $('.button__item,.menu').toggleClass('active'); 
+    $('body').toggleClass('lock'); 
+  });
+});
+
